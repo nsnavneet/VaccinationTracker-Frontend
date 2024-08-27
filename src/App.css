@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.App-header {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px; /* Reduced padding */
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px; /* Adjust padding */
+  font-size: 16px; /* Adjust font size for better readability */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #c2185b; /* Adjust hover background color */
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto; /* Center sections horizontally */
+  width: 90%; /* Maximum width of sections */
+  max-width: 800px; /* Maximum width */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+  }
+
+  nav ul li a {
+    padding: 10px; /* Larger touch targets for mobile */
+  }
+}
